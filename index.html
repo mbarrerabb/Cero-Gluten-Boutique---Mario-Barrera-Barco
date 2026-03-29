@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CeroGluten - Cestas sin gluten premium cuidadosamente seleccionadas. Envío 24-48h, pago seguro y hecho con amor.">
     <title>CeroGluten - Cestas Sin Gluten Premium</title>
+    <link rel="website icon" type="png" href="IMG/logo.jpeg">
+
+
     <link rel="stylesheet" href="fuentes/fontawesome-free-7.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="pages/styles.css">
 </head>
@@ -17,16 +20,16 @@
         </a>
 
         <!-- Menu -->
-        <nav>
+        <div class="nav-container">
             <ul class="menu">
                 <li><a href="index.html" class="activo">Inicio</a></li>
-                <li><a href="#">Cestas</a></li>
-                <li><a href="#">Suscripción</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="pages/cestas.html">Cestas</a></li>
+                <li><a href="pages/suscripcion.html">Suscripción</a></li>
+                <li><a href="pages/blog.html">Blog</a></li>
+                <li><a href="pages/nosotros.html">Nosotros</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+        </div>
 
         <div class="botones-cabecera">
             <button class="btn-icono" aria-label="Buscar">
@@ -47,11 +50,11 @@
         </div>
     </div>
 
-    <main>
+    <div class="main-content">
 
         <!-- PORTADA -->
-        <section class="portada">
-            <div class="portada-izq">
+        <div class="portada">
+            <div class="hero-contenido">
                 <div class="etiqueta-top">100% Certificado Sin Gluten</div>
 
                 <h1>Cestas sin gluten premium cuidadosamente seleccionadas</h1>
@@ -79,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="caja-img-portada">
+            <div class="hero-imagen">
                 <!-- Imagen Hero -->
                 <img src="IMG/pan.jpg" alt="Cestas sin gluten premium">
 
@@ -92,17 +95,17 @@
                 <div class="tarjeta-certificada">
                     <div class="fondo-cert">&#10003;</div>
                     <div>
-                        <div class="txt-100">100%</div>
-                        <div class="txt-sub">Certificado</div>
-                        <div class="txt-mini">Todos los productos con garantía</div>
+                        <div class="porcentaje-destacado">100%</div>
+                        <div class="texto-certificado">Certificado</div>
+                        <div class="aclaracion-certificado">Todos los productos con garantía</div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- VENTAJAS 3 COLUMNAS -->
-        <section class="ventajas">
-            <div class="rejilla-3">
+        <div class="ventajas">
+            <div class="contenedor-ventajas">
                 <div class="caja-ventaja">
                     <div class="caja-icono fondo-verde">
                         <i class="fa-solid fa-shield-halved"></i>
@@ -127,10 +130,10 @@
                     <p>Packaging reciclable y materiales sostenibles.</p>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- SOBRE NOSOTROS -->
-        <section class="nosotros">
+        <div class="nosotros">
             <div class="img-fondo">
                 <img src="IMG/MariaBarco.jpeg" alt="Fundadora de CeroGluten en la cocina">
                 <div class="corazon-flotante">&#10084;</div>
@@ -157,10 +160,10 @@
                     Conoce más sobre nosotros &nbsp;&rarr;
                 </a>
             </div>
-        </section>
+        </div>
 
         <!-- CESTAS -->
-        <section class="productos">
+        <div class="productos">
             <div class="titulos-seccion">
                 <p class="subtitulo">
                     <i class="fa-solid fa-star"></i>
@@ -170,67 +173,105 @@
                 <p>Cada cesta es una experiencia cuidada. Productos premium sin gluten certificados, seleccionados personalmente para garantizar calidad y sabor excepcionales.</p>
             </div>
 
-            <div class="rejilla-productos">
+        <!-- Rejilla de cestas -->
+        <div class="rejilla-catalogo">
 
-                <!-- cesta 1 -->
-                <div class="tarjeta-producto">
-                    <div class="foto-producto">
-                        <img src="IMG/cesta_BuenosDias.jpeg" alt="Cesta Buenos Días">
-                        <span class="etiqueta-sintacc">100% Sin Gluten</span>
-                        <button class="btn-favorito" aria-label="Añadir a favoritos">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-                    </div>
-                    <div class="cuerpo-producto">
-                        <h3>Buenos Días</h3>
-                        <p class="texto-producto">El desayuno sin gluten perfecto para empezar el día con energía. Galletas, miel y un mensaje personalizado.</p>
-                        <div class="fila-precio">
-                            <span class="precio-final">17.84€</span>
-                            <span class="precio-tachado">20.99€</span>
-                        </div>
-                        <p class="texto-ahorro">Ahorra 3.15€</p>
-                        <button class="btn-comprar">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                            Comprar ahora
-                        </button>
-                        <button class="btn-detalles">
-                            Ver detalles &nbsp;&rarr;
+            <!-- Cesta 1 -->
+        <a href="pages/BuenosDias.html">
+            <div class="tarjeta-catalogo">
+                <div class="caja-img-catalogo">
+                    <img src="IMG/cesta_BuenosDias.jpeg" alt="Cesta Buenos Días">
+                    <div class="etiqueta-sg-verde">Sin Gluten</div>
+                    <div class="etiqueta-desc-roja">-15%</div>
+                    <button class="btn-favorito-catalogo" aria-label="Favorito">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <!-- Capa hover botón añadir al carrito -->
+                    <div class="capa-btn-carrito">
+                        <button class="btn-anadir-carrito">
+                            <i class="fa-solid fa-bag-shopping"></i> Añadir al carrito
                         </button>
                     </div>
                 </div>
-
-                <!-- cesta 2 -->
-                <div class="tarjeta-producto">
-                    <div class="foto-producto">
-                        <img src="IMG/cesta_LaCaprichosa.jpeg" alt="Cesta La Caprichosa">
-                        <span class="etiqueta-sintacc">100% Sin Gluten</span>
-                        <button class="btn-favorito" aria-label="Añadir a favoritos">
-                            <i class="fa-regular fa-heart"></i>
-                        </button>
-                    </div>
-                    <div class="cuerpo-producto">
-                        <h3>La Caprichosa</h3>
-                        <p class="texto-producto">Una selección con lo mejor de dulce y salado, 100% sin gluten. Para el caprichoso que lo quiere todo.</p>
-                        <div class="fila-precio">
-                            <span class="precio-final">25.49€</span>
-                            <span class="precio-tachado">29.99€</span>
+                <div class="info-catalogo">
+                    <div class="categoria-cesta">Cesta Familiar</div>
+                    <h2 class="titulo-cesta">Buenos Días</h2>
+                    <p class="desc-cesta">El desayuno sin gluten perfecto para empezar el día con energía. Galletas, miel y un mensaje personalizado.</p>
+                    <div class="fila-precio-catalogo">
+                        <div class="bloque-precios">
+                            <span class="precio-catalogo-nuevo">17.84€</span>
+                            <span class="precio-catalogo-viejo">20.99€</span>
                         </div>
-                        <p class="texto-ahorro">Ahorra 4.50€</p>
-                        <button class="btn-comprar">
-                            <i class="fa-solid fa-basket-shopping"></i>
-                            Comprar ahora
-                        </button>
-                        <button class="btn-detalles">
-                            Ver detalles &nbsp;&rarr;
-                        </button>
+                        <a href="#" class="enlace-ver-mas">Ver más &rarr;</a>
                     </div>
                 </div>
-
             </div>
-        </section>
+        </a>
+            <!-- Cesta 2 -->
+        <a href="pages/LaCaprichosa.html">
+            <div class="tarjeta-catalogo">
+                <div class="caja-img-catalogo">
+                    <img src="IMG/cesta_LaCaprichosa.jpeg" alt="Cesta La Caprichosa">
+                    <div class="etiqueta-sg-verde">Sin Gluten</div>
+                    <div class="etiqueta-desc-roja">-15%</div>
+                    <button class="btn-favorito-catalogo" aria-label="Favorito">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <div class="capa-btn-carrito">
+                        <button class="btn-anadir-carrito">
+                            <i class="fa-solid fa-bag-shopping"></i> Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="info-catalogo">
+                    <div class="categoria-cesta">Cesta Basica</div>
+                    <h2 class="titulo-cesta">La Caprichosa</h2>
+                    <p class="desc-cesta">Una selección con lo mejor de dulce y salado, 100% sin gluten. Para el caprichoso que lo quiere todo.</p>
+                    <div class="fila-precio-catalogo">
+                        <div class="bloque-precios">
+                            <span class="precio-catalogo-nuevo">25.49€</span>
+                            <span class="precio-catalogo-viejo">29.99€</span>
+                        </div>
+                        <a href="#" class="enlace-ver-mas">Ver más &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </a>
+            <!-- Cesta 3 -->
+        <a href="pages/Chacina.html">
+            <div class="tarjeta-catalogo">
+                <div class="caja-img-catalogo">
+                    <img src="IMG/cesta_Chacina.jpeg" alt="Cesta Chacina" onerror="this.src='IMG/cesta_LaCaprichosa.jpeg'">
+                    <div class="etiqueta-sg-verde">Sin Gluten</div>
+                    <div class="etiqueta-desc-roja">-15%</div>
+                    <button class="btn-favorito-catalogo" aria-label="Favorito">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <div class="capa-btn-carrito">
+                        <button class="btn-anadir-carrito">
+                            <i class="fa-solid fa-bag-shopping"></i> Añadir al carrito
+                        </button>
+                    </div>
+                </div>
+                <div class="info-catalogo">
+                    <div class="categoria-cesta">Cesta Familiar</div>
+                    <h2 class="titulo-cesta">Chacina</h2>
+                    <p class="desc-cesta">Sabores ibéricos de Extremadura sin gluten.</p>
+                    <div class="fila-precio-catalogo">
+                        <div class="bloque-precios">
+                            <span class="precio-catalogo-nuevo">17.84€</span>
+                            <span class="precio-catalogo-viejo">20.99€</span>
+                        </div>
+                        <a href="#" class="enlace-ver-mas">Ver más &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </a>
+        </div>
+    </div>
 
         <!-- TESTIMONIOS -->
-        <section class="opiniones">
+        <div class="opiniones">
             <div class="etiqueta-roja centrado" style="margin: 0 auto 16px auto; display:inline-flex;">
                 <i class="fa-solid fa-heart"></i>
                 Testimonios
@@ -317,10 +358,10 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- PLANES SUSCRIPCION -->
-        <section class="planes">
+        <div class="planes">
             <div class="titulos-seccion">
                 <p class="subtitulo">
                     <i class="fa-solid fa-crown"></i>
@@ -405,10 +446,10 @@
                 <span><span class="icono-verde">&#10003;</span> Cancela cuando quieras</span>
                 <span><span class="icono-verde">&#10003;</span> Primera cesta gratis si no te gusta</span>
             </div>
-        </section>
+        </div>
 
         <!-- POR QUE ELEGIRNOS -->
-        <section class="motivos">
+        <div class="motivos">
             <div class="titulos-seccion">
                 <p class="subtitulo">
                     <i class="fa-regular fa-circle-check"></i>
@@ -462,10 +503,10 @@
                     <div class="txt-dato">Packaging Sostenible</div>
                 </div>
             </div>
-        </section>
+        </div>
 
         <!-- BOLETIN -->
-        <section class="boletin">
+        <div class="boletin">
             <span class="forma-fondo top-izq">&#10084;</span>
             <span class="forma-fondo bot-der">&#127873;</span>
 
@@ -500,9 +541,9 @@
             </form>
 
             <p class="aviso-correo">No compartimos tu email. Puedes darte de baja cuando quieras.</p>
-        </section>
+        </div>
 
-    </main>
+    </div>
 
     <!-- PIE DE PAGINA -->
     <div class="pie-pagina">
@@ -525,10 +566,10 @@
                 <h4>Navegación</h4>
                 <ul>
                     <li><a href="index.html">Inicio</a></li>
-                    <li><a href="#">Cestas</a></li>
-                    <li><a href="#">Club Suscripción</a></li>
-                    <li><a href="#">Sobre Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="pages/cestas.html">Cestas</a></li>
+                    <li><a href="pages/suscripcion.html">Club Suscripción</a></li>
+                    <li><a href="pages/nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
                 </ul>
             </div>
 
