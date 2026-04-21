@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CeroGluten - Cestas sin gluten premium cuidadosamente seleccionadas. Envío 24-48h, pago seguro y hecho con amor.">
-    <title>Catalogo de cestas</title>
+    <meta name="description" content="CeroGluten - Blog con recetas, consejos y vida sin gluten.">
+    <title>Blog - CeroGluten</title>
     <link rel="website icon" type="png" href="../IMG/logo.jpeg">
-
-
     <link rel="stylesheet" href="../fuentes/fontawesome-free-7.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -18,8 +16,6 @@
         <a href="../index.html" class="logo">
             <img src="../IMG/logo.jpeg" alt="Logo CeroGluten">
         </a>
-
-        <!-- Menu -->
         <div class="nav-container">
             <ul class="menu">
                 <li><a href="../index.html">Inicio</a></li>
@@ -30,48 +26,138 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </div>
-
         <div class="botones-cabecera">
             <button class="btn-icono" aria-label="Buscar">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-            <button class="btn-regalar">
+            <a href="regalo.html" class="btn-regalar">
                 <i class="fa-solid fa-gift"></i>
                 Regalar
-            </button>
+            </a>
             <button class="btn-icono" aria-label="Favoritos">
                 <i class="fa-regular fa-heart"></i>
             </button>
-            
-            <button class="btn-icono" aria-label="Carrito" style="position:relative;">
+            <a href="carrito.html" class="btn-icono" aria-label="Carrito" style="position:relative;">
                 <i class="fa-solid fa-bag-shopping"></i>
-                <span class="globo-carrito">1</span>
-            </button>
+                <span class="globo-carrito" id="globo-carrito">0</span>
+            </a>
         </div>
+    </div>
+
+    <!-- HERO BLOG -->
+    <div class="hero-blog">
+        <div class="etiq-blog">
+            <i class="fa-regular fa-bookmark"></i> Blog CeroGluten
+        </div>
+        <h1 class="titulo-blog">Inspiración sin gluten</h1>
+        <p class="sub-blog">Recetas, consejos y todo lo que necesitas saber para disfrutar de una vida sin gluten plena y deliciosa</p>
     </div>
 
 
 
+    <!-- ARTICULO DESTACADO -->
+    <div class="art-dest">
+        <div class="img-dest" style="background-image: url('../IMG/PastaCarbonara.jpg');"></div>
+        <div class="info-dest">
+            <div class="cat-tag">
+                <i class="fa-solid fa-tag"></i> recetas
+            </div>
+            <h2 class="titulo-art">Pasta carbonara sin gluten que haría llorar de alegría a un italiano (o casi)</h2>
+            <p class="resumen-art">La carbonara perfecta sin gluten existe. Y no, no lleva nata. Te damos la receta auténtica adaptada para que disfrutes sin miedo y sin restricciones.</p>
+            <div class="meta-art">
+                <span><i class="fa-regular fa-calendar"></i> 3 abr 2026</span>
+                <span><i class="fa-regular fa-eye"></i> 0 lecturas</span>
+            </div>
+            <a href="#" class="leer-mas">Leer más &rarr;</a>
+        </div>
+    </div>
 
+    <!-- REJILLA DE ARTICULOS -->
+    <div class="rejilla-blog">
 
+        <div class="tarjeta-blog">
+            <div class="img-blog" style="background-image: url('../IMG/TortitasAvena.jpg');"></div>
+            <div class="info-blog">
+                <div class="cat-tag">recetas</div>
+                <h3 class="titulo-tarjeta">Tortitas de avena sin gluten que te harán olvidar las normales (en serio)</h3>
+                <p class="resumen-tarjeta">Esponjosas, doradas y listas en 10 minutos. Esta receta cambió mis mañanas para siempre — y las de mi familia, que ya no pregunta s...</p>
+                <div class="pie-tarjeta">
+                    <span>1 abr 2026</span>
+                    <a href="#" class="leer-blog">Leer &rarr;</a>
+                </div>
+            </div>
+        </div>
 
+        <div class="tarjeta-blog">
+            <div class="img-blog" style="background-image: url('../IMG/Pipsa0Gluten.jpg');"></div>
+            <div class="info-blog">
+                <div class="cat-tag">recetas</div>
+                <h3 class="titulo-tarjeta">Pizza sin gluten casera: la guía definitiva para que no quede un cartón</h3>
+                <p class="resumen-tarjeta">La pizza sin gluten tiene fama de saber a cartón mojado. Hoy rompemos ese mito con una masa crujiente, ligera y que se dobla...</p>
+                <div class="pie-tarjeta">
+                    <span>28 mar 2026</span>
+                    <a href="#" class="leer-blog">Leer &rarr;</a>
+                </div>
+            </div>
+        </div>
 
+        <div class="tarjeta-blog">
+            <div class="img-blog" style="background-image: url('../IMG/TrampaGluten.jpg');"></div>
+            <div class="info-blog">
+                <div class="cat-tag">consejos</div>
+                <h3 class="titulo-tarjeta">Las 8 trampas del gluten oculto que te van a sorprender (y cómo evitarlas)</h3>
+                <p class="resumen-tarjeta">Llevas meses siguiendo la dieta sin gluten y sigues sintiéndote mal. El problema quizás no está donde buscas. Descubre los escondites...</p>
+                <div class="pie-tarjeta">
+                    <span>28 mar 2026</span>
+                    <a href="#" class="leer-blog">Leer &rarr;</a>
+                </div>
+            </div>
+        </div>
 
+        <div class="tarjeta-blog">
+            <div class="img-blog" style="background-image: url('../IMG/BodaGlutenfobica.jpg');"></div>
+            <div class="info-blog">
+                <div class="cat-tag">consejos</div>
+                <h3 class="titulo-tarjeta">Cómo sobrevivir a una boda siendo celíaca sin morirte de hambre (ni de vergüenza)</h3>
+                <p class="resumen-tarjeta">Flores, vestidos bonitos y un buffet lleno de croquetas que no puedes tocar. Te damos el plan de acción completo para disfrutar...</p>
+                <div class="pie-tarjeta">
+                    <span>25 mar 2026</span>
+                    <a href="#" class="leer-blog">Leer &rarr;</a>
+                </div>
+            </div>
+        </div>
 
+        <div class="tarjeta-blog">
+            <div class="img-blog" style="background-image: url('../IMG/8Pastas.jpg');"></div>
+            <div class="info-blog">
+                <div class="cat-tag oro">productos</div>
+                <h3 class="titulo-tarjeta">Comparamos 8 marcas de pasta sin gluten: el ranking definitivo (con cata a ciegas)</h3>
+                <p class="resumen-tarjeta">Compramos y cocinamos 8 marcas de pasta sin gluten del mercado, las probamos en una cata a ciegas con celíacos y no celíacos, y te...</p>
+                <div class="pie-tarjeta">
+                    <span>25 mar 2026</span>
+                    <a href="#" class="leer-blog">Leer &rarr;</a>
+                </div>
+            </div>
+        </div>
 
+        <div class="tarjeta-blog">
+            <div class="img-blog" style="background-image: url('../IMG/Etiquetera.jpg');"></div>
+            <div class="info-blog">
+                <div class="cat-tag">consejos</div>
+                <h3 class="titulo-tarjeta">Cómo leer etiquetas como una experta (sin necesitar un doctorado en química)</h3>
+                <p class="resumen-tarjeta">"Contiene: almidón modificado de E1404, maltodextrina, dextrosa..." ¿Qué demonios significa esto y hay gluten ahí escondido? Te lo...</p>
+                <div class="pie-tarjeta">
+                    <span>22 mar 2026</span>
+                    <a href="#" class="leer-blog">Leer &rarr;</a>
+                </div>
+            </div>
+        </div>
 
-
-
-
-
-
-
-
+    </div>
 
     <!-- PIE DE PAGINA -->
     <div class="pie-pagina">
         <div class="fila-pie">
-
             <div class="col-logo">
                 <img src="../IMG/logo.jpeg" alt="Logo CeroGluten">
                 <p>Cuidamos de las personas y del planeta. Cestas sin gluten elaboradas con corazón.</p>
@@ -84,7 +170,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="col-enlaces">
                 <h4>Navegación</h4>
                 <ul>
@@ -95,7 +180,6 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
-
             <div class="col-contacto">
                 <h4>Contacto</h4>
                 <div class="linea-contacto">
@@ -111,7 +195,6 @@
                     España
                 </div>
             </div>
-
             <div class="col-sellos">
                 <h4>Confianza</h4>
                 <div class="sello-pie">
@@ -123,18 +206,16 @@
                     <span>Hecho con Corazón</span>
                 </div>
             </div>
-
         </div>
-
         <div class="copyright">
             <p>&copy; 2024 CeroGluten. Todos los derechos reservados.</p>
         </div>
     </div>
 
-    <!-- BOTON SUBIR -->
     <a href="#" class="btn-subir" aria-label="Volver al inicio">
         <i class="fa-solid fa-chevron-up"></i>
     </a>
 
+    <script src="carrito.js"></script>
 </body>
 </html>

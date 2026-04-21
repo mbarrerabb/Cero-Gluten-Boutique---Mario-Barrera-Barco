@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CeroGluten - Cestas sin gluten premium cuidadosamente seleccionadas. Envío 24-48h, pago seguro y hecho con amor.">
-    <title>Catalogo de cestas</title>
+    <title>Contacto - CeroGluten</title>
     <link rel="website icon" type="png" href="../IMG/logo.jpeg">
-
-
     <link rel="stylesheet" href="../fuentes/fontawesome-free-7.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -18,8 +16,6 @@
         <a href="../index.html" class="logo">
             <img src="../IMG/logo.jpeg" alt="Logo CeroGluten">
         </a>
-
-        <!-- Menu -->
         <div class="nav-container">
             <ul class="menu">
                 <li><a href="../index.html">Inicio</a></li>
@@ -30,48 +26,125 @@
                 <li><a href="contacto.html" class="activo">Contacto</a></li>
             </ul>
         </div>
-
         <div class="botones-cabecera">
             <button class="btn-icono" aria-label="Buscar">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-            <button class="btn-regalar">
+            <a href="regalo.html" class="btn-regalar">
                 <i class="fa-solid fa-gift"></i>
                 Regalar
-            </button>
+            </a>
             <button class="btn-icono" aria-label="Favoritos">
                 <i class="fa-regular fa-heart"></i>
             </button>
-            
-            <button class="btn-icono" aria-label="Carrito" style="position:relative;">
+            <a href="carrito.html" class="btn-icono" aria-label="Carrito" style="position:relative;">
                 <i class="fa-solid fa-bag-shopping"></i>
-                <span class="globo-carrito">1</span>
-            </button>
+                <span class="globo-carrito" id="globo-carrito">0</span>
+            </a>
         </div>
     </div>
 
+    <!-- HERO -->
+    <div class="hero-cont">
+        <div class="etiq-cont">
+            <i class="fa-solid fa-wand-magic-sparkles"></i> Contacto
+        </div>
+        <h1 class="titulo-cont">Estamos aquí para ti</h1>
+        <p class="sub-cont">¿Tienes alguna pregunta, sugerencia o simplemente quieres saludarnos? Nos encantará saber de ti.</p>
+    </div>
 
+    <!-- CUERPO -->
+    <div class="cuerpo-cont">
 
+        <div class="col-datos">
+            <div class="icono-datos"><i class="fa-solid fa-heart"></i></div>
+            <h3>Hablemos</h3>
+            <p>En CeroGluten valoramos cada mensaje. Estamos comprometidos a responderte en menos de 24 horas.</p>
 
+            <div class="fila-dato">
+                <div class="circulo-dato"><i class="fa-regular fa-envelope"></i></div>
+                <div class="info-dato">
+                    <h4>Email</h4>
+                    <span>hola@cerogluten.es</span>
+                </div>
+            </div>
 
+            <div class="fila-dato">
+                <div class="circulo-dato"><i class="fa-solid fa-phone"></i></div>
+                <div class="info-dato">
+                    <h4>Teléfono</h4>
+                    <span>+34 606 685 546</span>
+                </div>
+            </div>
 
+            <div class="fila-dato">
+                <div class="circulo-dato"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="info-dato">
+                    <h4>Ubicación</h4>
+                    <span>España</span>
+                </div>
+            </div>
 
+            <div class="fila-dato">
+                <div class="circulo-dato"><i class="fa-regular fa-clock"></i></div>
+                <div class="info-dato">
+                    <h4>Horario</h4>
+                    <span>Lun - Vie: 9:00 - 18:00</span>
+                </div>
+            </div>
 
+            <p class="titulo-redes">Síguenos</p>
+            <div class="redes-cont">
+                <a href="#" class="red-cont" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="red-cont" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+            </div>
+        </div>
 
+        <div class="col-form">
+            <div class="titulo-form">
+                <i class="fa-regular fa-comment"></i> Envíanos un mensaje
+            </div>
 
+            <div class="fila-inputs">
+                <div class="grupo-input mitad">
+                    <label>Nombre *</label>
+                    <input type="text" placeholder="Tu nombre">
+                </div>
+                <div class="grupo-input mitad">
+                    <label>Email *</label>
+                    <input type="email" placeholder="tu@email.com">
+                </div>
+            </div>
 
+            <div class="grupo-input">
+                <label>Asunto</label>
+                <input type="text" placeholder="¿Sobre qué quieres hablar?">
+            </div>
 
+            <div class="grupo-input">
+                <label>Mensaje *</label>
+                <textarea placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+            </div>
 
+            <button class="btn-enviar-cont">
+                <i class="fa-solid fa-paper-plane"></i> Enviar mensaje
+            </button>
+        </div>
 
+    </div>
 
-
-
-
+    <!-- NOTA FINAL -->
+    <div class="nota-cont">
+        <i class="fa-solid fa-heart"></i> Cada mensaje es importante para nosotros. Gracias por confiar en CeroGluten.
+    </div>
 
     <!-- PIE DE PAGINA -->
     <div class="pie-pagina">
         <div class="fila-pie">
-
             <div class="col-logo">
                 <img src="../IMG/logo.jpeg" alt="Logo CeroGluten">
                 <p>Cuidamos de las personas y del planeta. Cestas sin gluten elaboradas con corazón.</p>
@@ -84,7 +157,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="col-enlaces">
                 <h4>Navegación</h4>
                 <ul>
@@ -95,7 +167,6 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
-
             <div class="col-contacto">
                 <h4>Contacto</h4>
                 <div class="linea-contacto">
@@ -111,7 +182,6 @@
                     España
                 </div>
             </div>
-
             <div class="col-sellos">
                 <h4>Confianza</h4>
                 <div class="sello-pie">
@@ -123,18 +193,16 @@
                     <span>Hecho con Corazón</span>
                 </div>
             </div>
-
         </div>
-
         <div class="copyright">
             <p>&copy; 2024 CeroGluten. Todos los derechos reservados.</p>
         </div>
     </div>
 
-    <!-- BOTON SUBIR -->
     <a href="#" class="btn-subir" aria-label="Volver al inicio">
         <i class="fa-solid fa-chevron-up"></i>
     </a>
 
+    <script src="carrito.js"></script>
 </body>
 </html>

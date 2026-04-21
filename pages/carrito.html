@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CeroGluten - Tu carrito de compra.">
+    <title>Carrito - CeroGluten</title>
+    <link rel="website icon" type="png" href="../IMG/logo.jpeg">
+    <link rel="stylesheet" href="../fuentes/fontawesome-free-7.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <div class="cabecera">
+        <a href="../index.html" class="logo">
+            <img src="../IMG/logo.jpeg" alt="Logo CeroGluten">
+        </a>
+        <div class="nav-container">
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="cestas.html">Cestas</a></li>
+                <li><a href="suscripcion.html">Suscripción</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="botones-cabecera">
+            <button class="btn-icono" aria-label="Buscar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="btn-regalar">
+                <i class="fa-solid fa-gift"></i>
+                Regalar
+            </button>
+            <button class="btn-icono" aria-label="Favoritos">
+                <i class="fa-regular fa-heart"></i>
+            </button>
+            <a href="carrito.html" class="btn-icono" aria-label="Carrito" style="position:relative;">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="globo-carrito" id="globo-carrito">0</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- CONTENIDO DEL CARRITO -->
+    <div class="contenedor-detalle">
+
+        <div class="seccion-carrito">
+
+            <div class="cabecera-carrito">
+                <h1><i class="fa-solid fa-bag-shopping"></i> Tu carrito</h1>
+            </div>
+
+            <div id="carrito-vacio" class="carrito-vacio" style="display:none;">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p>Tu carrito está vacío</p>
+                <a href="cestas.html" class="btn-plan-oro" style="display:inline-block; margin-top:16px;">Ver cestas</a>
+            </div>
+
+            <div id="carrito-contenido">
+
+                <div class="fila-carrito" id="fila-buenos-dias">
+                    <div class="img-carrito">
+                        <img src="../IMG/cesta_BuenosDias.jpeg" alt="Buenos Días">
+                    </div>
+                    <div class="info-carrito">
+                        <div class="nombre-carrito">Buenos Días</div>
+                        <div class="precio-carrito">17.84€</div>
+                    </div>
+                    <div class="controles-carrito">
+                        <button class="btn-menos" onclick="cambiarCantidad('Buenos Días', -1)">-</button>
+                        <span id="cant-buenos-dias" class="cant-carrito">0</span>
+                        <button class="btn-mas" onclick="cambiarCantidad('Buenos Días', 1)">+</button>
+                    </div>
+                    <div class="subtotal-carrito" id="sub-buenos-dias">0.00€</div>
+                    <button class="btn-eliminar" onclick="eliminarProducto('Buenos Días')">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+
+                <div class="fila-carrito" id="fila-caprichosa">
+                    <div class="img-carrito">
+                        <img src="../IMG/cesta_LaCaprichosa.jpeg" alt="La Caprichosa">
+                    </div>
+                    <div class="info-carrito">
+                        <div class="nombre-carrito">La Caprichosa</div>
+                        <div class="precio-carrito">25.49€</div>
+                    </div>
+                    <div class="controles-carrito">
+                        <button class="btn-menos" onclick="cambiarCantidad('La Caprichosa', -1)">-</button>
+                        <span id="cant-caprichosa" class="cant-carrito">0</span>
+                        <button class="btn-mas" onclick="cambiarCantidad('La Caprichosa', 1)">+</button>
+                    </div>
+                    <div class="subtotal-carrito" id="sub-caprichosa">0.00€</div>
+                    <button class="btn-eliminar" onclick="eliminarProducto('La Caprichosa')">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+
+                <div class="fila-carrito" id="fila-chacina">
+                    <div class="img-carrito">
+                        <img src="../IMG/cesta_Chacina.jpeg" alt="Chacina">
+                    </div>
+                    <div class="info-carrito">
+                        <div class="nombre-carrito">Chacina</div>
+                        <div class="precio-carrito">17.84€</div>
+                    </div>
+                    <div class="controles-carrito">
+                        <button class="btn-menos" onclick="cambiarCantidad('Chacina', -1)">-</button>
+                        <span id="cant-chacina" class="cant-carrito">0</span>
+                        <button class="btn-mas" onclick="cambiarCantidad('Chacina', 1)">+</button>
+                    </div>
+                    <div class="subtotal-carrito" id="sub-chacina">0.00€</div>
+                    <button class="btn-eliminar" onclick="eliminarProducto('Chacina')">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+
+                <div class="total-carrito">
+                    <span>Total:</span>
+                    <span id="total-carrito" class="precio-total">0.00€</span>
+                </div>
+
+                <div class="acciones-carrito">
+                    <button class="btn-vaciar" onclick="vaciarCarrito()">
+                        <i class="fa-solid fa-trash"></i> Vaciar carrito
+                    </button>
+                    <button class="btn-tramitar" onclick="tramitarPedido(),vaciarCarrito()">
+                        <i class="fa-brands fa-whatsapp"></i> Tramitar pedido por WhatsApp
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- PIE DE PAGINA -->
+    <div class="pie-pagina">
+        <div class="fila-pie">
+            <div class="col-logo">
+                <img src="../IMG/logo.jpeg" alt="Logo CeroGluten">
+                <p>Cuidamos de las personas y del planeta. Cestas sin gluten elaboradas con corazón.</p>
+                <div class="redes-sociales">
+                    <a href="#" class="enlace-red" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="enlace-red" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-enlaces">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="cestas.html">Cestas</a></li>
+                    <li><a href="suscripcion.html">Club Suscripción</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-contacto">
+                <h4>Contacto</h4>
+                <div class="linea-contacto">
+                    <i class="fa-regular fa-envelope"></i>
+                    pedidos@ceroglutenboutique.com
+                </div>
+                <div class="linea-contacto">
+                    <i class="fa-solid fa-phone"></i>
+                    +34 606 685 546
+                </div>
+                <div class="linea-contacto">
+                    <i class="fa-solid fa-location-dot"></i>
+                    España
+                </div>
+            </div>
+            <div class="col-sellos">
+                <h4>Confianza</h4>
+                <div class="sello-pie">
+                    <div class="icono-sello"><i class="fa-solid fa-leaf"></i></div>
+                    <span>100% Sin Gluten Certificado</span>
+                </div>
+                <div class="sello-pie">
+                    <div class="icono-sello"><i class="fa-regular fa-heart"></i></div>
+                    <span>Hecho con Corazón</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 CeroGluten. Todos los derechos reservados.</p>
+        </div>
+    </div>
+
+    <a href="#" class="btn-subir" aria-label="Volver al inicio">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script src="carrito.js"></script>
+    <script>
+        var precios = {
+            'Buenos Días': 17.84,
+            'La Caprichosa': 25.49,
+            'Chacina': 17.84
+        };
+
+        function renderCarrito() {
+            var carrito = JSON.parse(localStorage.getItem('carrito')) || {};
+
+            var cantBD = carrito['Buenos Días'] || 0;
+            var cantCAP = carrito['La Caprichosa'] || 0;
+            var cantCHA = carrito['Chacina'] || 0;
+            var total = cantBD + cantCAP + cantCHA;
+
+            document.getElementById('cant-buenos-dias').textContent = cantBD;
+            document.getElementById('cant-caprichosa').textContent = cantCAP;
+            document.getElementById('cant-chacina').textContent = cantCHA;
+
+            document.getElementById('sub-buenos-dias').textContent = (cantBD * precios['Buenos Días']).toFixed(2) + '€';
+            document.getElementById('sub-caprichosa').textContent = (cantCAP * precios['La Caprichosa']).toFixed(2) + '€';
+            document.getElementById('sub-chacina').textContent = (cantCHA * precios['Chacina']).toFixed(2) + '€';
+
+            var totalEuros = cantBD * precios['Buenos Días'] + cantCAP * precios['La Caprichosa'] + cantCHA * precios['Chacina'];
+            document.getElementById('total-carrito').textContent = totalEuros.toFixed(2) + '€';
+
+            document.getElementById('fila-buenos-dias').style.display = cantBD > 0 ? 'flex' : 'none';
+            document.getElementById('fila-caprichosa').style.display = cantCAP > 0 ? 'flex' : 'none';
+            document.getElementById('fila-chacina').style.display = cantCHA > 0 ? 'flex' : 'none';
+
+            if (total === 0) {
+                document.getElementById('carrito-vacio').style.display = 'block';
+                document.getElementById('carrito-contenido').style.display = 'none';
+            } else {
+                document.getElementById('carrito-vacio').style.display = 'none';
+                document.getElementById('carrito-contenido').style.display = 'block';
+            }
+        }
+
+        function cambiarCantidad(nombre, delta) {
+            var carrito = JSON.parse(localStorage.getItem('carrito')) || {};
+            carrito[nombre] = (carrito[nombre] || 0) + delta;
+            if (carrito[nombre] <= 0) delete carrito[nombre];
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            actualizarGlobo();
+            renderCarrito();
+        }
+
+        function eliminarProducto(nombre) {
+            var carrito = JSON.parse(localStorage.getItem('carrito')) || {};
+            delete carrito[nombre];
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            actualizarGlobo();
+            renderCarrito();
+        }
+
+        function vaciarCarrito() {
+            localStorage.removeItem('carrito');
+            actualizarGlobo();
+            renderCarrito();
+        }
+
+        function tramitarPedido() {
+            var carrito = JSON.parse(localStorage.getItem('carrito')) || {};
+            var bd = carrito['Buenos Días'] || 0;
+            var cap = carrito['La Caprichosa'] || 0;
+            var cha = carrito['Chacina'] || 0;
+
+            var texto = 'Quiero tramitar mi pedido con ' +
+                bd + ' cestas de Buenos días, ' +
+                cap + ' cestas de La Caprichosa y ' +
+                cha + ' cestas de Chacina';
+
+            window.open('https://wa.me/34696449266?text=' + encodeURIComponent(texto), '_blank');
+        }
+
+        renderCarrito();
+    </script>
+
+</body>
+</html>

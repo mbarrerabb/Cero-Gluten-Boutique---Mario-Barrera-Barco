@@ -43,10 +43,10 @@
                 <i class="fa-regular fa-heart"></i>
             </button>
             
-            <button class="btn-icono" aria-label="Carrito" style="position:relative;">
+            <a href="pages/carrito.html" class="btn-icono" aria-label="Carrito" style="position:relative;">
                 <i class="fa-solid fa-bag-shopping"></i>
-                <span class="globo-carrito">1</span>
-            </button>
+                <span class="globo-carrito" id="globo-carrito">0</span>
+            </a>
         </div>
     </div>
 
@@ -156,7 +156,7 @@
 
                 <p class="cita-autor">— María Barco, fundadora de CeroGluten</p>
 
-                <a href="#" class="btn-borde-verde">
+                <a href="pages/nosotros.html" class="btn-borde-verde">
                     Conoce más sobre nosotros &nbsp;&rarr;
                 </a>
             </div>
@@ -188,7 +188,7 @@
                     </button>
                     <!-- Capa hover botón añadir al carrito -->
                     <div class="capa-btn-carrito">
-                        <button class="btn-anadir-carrito">
+                        <button class="btn-anadir-carrito" onclick="event.stopPropagation(); añadirAlCarrito('Buenos Días')">
                             <i class="fa-solid fa-bag-shopping"></i> Añadir al carrito
                         </button>
                     </div>
@@ -218,7 +218,7 @@
                         <i class="fa-regular fa-heart"></i>
                     </button>
                     <div class="capa-btn-carrito">
-                        <button class="btn-anadir-carrito">
+                        <button class="btn-anadir-carrito" onclick="event.stopPropagation(); añadirAlCarrito('La Caprichosa')">
                             <i class="fa-solid fa-bag-shopping"></i> Añadir al carrito
                         </button>
                     </div>
@@ -248,7 +248,7 @@
                         <i class="fa-regular fa-heart"></i>
                     </button>
                     <div class="capa-btn-carrito">
-                        <button class="btn-anadir-carrito">
+                        <button class="btn-anadir-carrito" onclick="event.stopPropagation(); añadirAlCarrito('Chacina')">
                             <i class="fa-solid fa-bag-shopping"></i> Añadir al carrito
                         </button>
                     </div>
@@ -388,7 +388,8 @@
                         <li><span class="tick-verde">&#10003;</span> Cancela cuando quieras</li>
                         <li><span class="tick-verde">&#10003;</span> Acceso a recetas exclusivas</li>
                     </ul>
-                    <button class="btn-borde-negro">
+                    <button class="btn-borde-negro"
+                        onclick="window.open('https://wa.me/34696449255?text=Quiero%20suscribirme%20al%20plan%20basico', '_blank')">
                         Suscribirme ahora &nbsp;&rarr;
                     </button>
                 </div>
@@ -613,5 +614,6 @@
         <i class="fa-solid fa-chevron-up"></i>
     </a>
 
+    <script src="pages/carrito.js"></script>
 </body>
 </html>

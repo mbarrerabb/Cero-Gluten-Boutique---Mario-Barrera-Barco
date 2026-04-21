@@ -43,10 +43,10 @@
                 <i class="fa-regular fa-heart"></i>
             </button>
             
-            <button class="btn-icono" aria-label="Carrito" style="position:relative;">
+            <a href="carrito.html" class="btn-icono" aria-label="Carrito" style="position:relative;">
                 <i class="fa-solid fa-bag-shopping"></i>
-                <span class="globo-carrito">1</span>
-            </button>
+                <span class="globo-carrito" id="globo-carrito">0</span>
+            </a>
         </div>
     </div>
 
@@ -139,7 +139,7 @@
                         <span>1</span>
                         <button>&plus;</button>
                     </div>
-                    <button class="btn-anadir-detalle">
+                    <button class="btn-anadir-detalle" onclick="añadirAlCarrito('La Caprichosa')">
                         <i class="fa-solid fa-bag-shopping"></i> Añadir al carrito - 25.49&euro;
                     </button>
                 </div>
@@ -173,7 +173,7 @@
                         <div class="etiqueta-sg-verde">Sin Gluten</div>
                         <div class="etiqueta-desc-roja">-15%</div>
                         <div class="capa-btn-carrito">
-                            <button class="btn-anadir-carrito"><i class="fa-solid fa-bag-shopping"></i> Añadir</button>
+                            <button class="btn-anadir-carrito" onclick="event.stopPropagation(); añadirAlCarrito('Chacina')"><i class="fa-solid fa-bag-shopping"></i> Añadir</button>
                         </div>
                     </div>
                     <div class="info-catalogo">
@@ -194,7 +194,7 @@
                         <div class="etiqueta-sg-verde">Sin Gluten</div>
                         <div class="etiqueta-desc-roja">-15%</div>
                         <div class="capa-btn-carrito">
-                            <button class="btn-anadir-carrito"><i class="fa-solid fa-bag-shopping"></i> Añadir</button>
+                            <button class="btn-anadir-carrito" onclick="event.stopPropagation(); añadirAlCarrito('Buenos Días')"><i class="fa-solid fa-bag-shopping"></i> Añadir</button>
                         </div>
                     </div>
                     <div class="info-catalogo">
@@ -280,5 +280,6 @@
         <i class="fa-solid fa-chevron-up"></i>
     </a>
 
+    <script src="carrito.js"></script>
 </body>
 </html>

@@ -76,3 +76,6 @@ Gran parte del contenido sobre todo del CSS ya está echo , ahora solo queda "se
 
 Así que con 5 páginas .html que me qudan por crear o terminar todavía hice estas páginas y empecé a preparar la presentación.
 
+3️⃣ - Commit 3: "¿Queda mucho?" Páginas " de relleno " como quien dice , la suscripción , el blog , nosotros y contacto. Ese "fondo" que le faltaba a la web para estar completa porque pocas tiendas online venden publicando solo el catálogo de productos.
+
+La idea principal del proyecto estaría finalizada solo faltaría toda la documentación y inentar integrar algunas de las posibles mejoras que se me ocurran.

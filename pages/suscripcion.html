@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="CeroGluten - Cestas sin gluten premium cuidadosamente seleccionadas. Envío 24-48h, pago seguro y hecho con amor.">
-    <title>Catalogo de cestas</title>
+    <title>Club Suscripción - CeroGluten</title>
     <link rel="website icon" type="png" href="../IMG/logo.jpeg">
-
-
     <link rel="stylesheet" href="../fuentes/fontawesome-free-7.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -18,8 +16,6 @@
         <a href="../index.html" class="logo">
             <img src="../IMG/logo.jpeg" alt="Logo CeroGluten">
         </a>
-
-        <!-- Menu -->
         <div class="nav-container">
             <ul class="menu">
                 <li><a href="../index.html">Inicio</a></li>
@@ -30,48 +26,125 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </div>
-
         <div class="botones-cabecera">
             <button class="btn-icono" aria-label="Buscar">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-            <button class="btn-regalar">
+            <a href="regalo.html" class="btn-regalar">
                 <i class="fa-solid fa-gift"></i>
                 Regalar
-            </button>
+            </a>
             <button class="btn-icono" aria-label="Favoritos">
                 <i class="fa-regular fa-heart"></i>
             </button>
-            
-            <button class="btn-icono" aria-label="Carrito" style="position:relative;">
+            <a href="carrito.html" class="btn-icono" aria-label="Carrito" style="position:relative;">
                 <i class="fa-solid fa-bag-shopping"></i>
-                <span class="globo-carrito">1</span>
-            </button>
+                <span class="globo-carrito" id="globo-carrito">0</span>
+            </a>
         </div>
     </div>
 
+    <!-- HERO -->
+    <div class="hero-susc">
+        <div class="etiq-club">
+            <i class="fa-solid fa-crown"></i> CeroGluten Club
+        </div>
+        <h1 class="titulo-susc">Tu cesta mensual sin gluten</h1>
+        <p class="sub-susc">Recibe cada mes una selección exclusiva de productos sin gluten. Sin compromiso, cancela cuando quieras.</p>
+    </div>
 
+    <!-- PLANES -->
+    <div class="planes-susc">
 
+        <div class="tarjeta-susc">
+            <div class="icono-plan fondo-susc-verde">
+                <i class="fa-solid fa-gift"></i>
+            </div>
+            <h3 class="nom-plan">Básica</h3>
+            <p class="desc-plan">Ideal para empezar tu viaje sin gluten</p>
+            <div class="precio-susc">29€<span class="mes-susc">/mes</span></div>
+            <ul class="lista-susc">
+                <li><i class="fa-solid fa-check tick-verde"></i> Cesta mensual valorada en 40€</li>
+                <li><i class="fa-solid fa-check tick-verde"></i> 4-6 productos seleccionados</li>
+                <li><i class="fa-solid fa-check tick-verde"></i> Envío gratis incluido</li>
+                <li><i class="fa-solid fa-check tick-verde"></i> Cancela cuando quieras</li>
+                <li><i class="fa-solid fa-check tick-verde"></i> Acceso a recetas exclusivas</li>
+            </ul>
+            <a href="#" class="btn-borde-negro">Suscribirme ahora &rarr;</a>
+        </div>
 
+        <div class="tarjeta-susc destacada">
+            <div class="badge-popular">Más popular</div>
+            <div class="icono-plan fondo-susc-oro">
+                <i class="fa-solid fa-crown"></i>
+            </div>
+            <h3 class="nom-plan">Premium</h3>
+            <p class="desc-plan">La experiencia completa sin gluten</p>
+            <div class="precio-susc">49€<span class="mes-susc">/mes</span></div>
+            <ul class="lista-susc">
+                <li><i class="fa-solid fa-check tick-oro"></i> Cesta mensual valorada en 70€</li>
+                <li><i class="fa-solid fa-check tick-oro"></i> 8-10 productos premium</li>
+                <li><i class="fa-solid fa-check tick-oro"></i> Envío gratis prioritario</li>
+                <li><i class="fa-solid fa-check tick-oro"></i> Acceso anticipado a novedades</li>
+                <li><i class="fa-solid fa-check tick-oro"></i> Descuento 15% en tienda</li>
+                <li><i class="fa-solid fa-check tick-oro"></i> Recetas y masterclasses exclusivas</li>
+                <li><i class="fa-solid fa-check tick-oro"></i> Sorpresas mensuales</li>
+            </ul>
+            <a href="#" class="btn-plan-oro">Suscribirme ahora &rarr;</a>
+        </div>
 
+        <div class="tarjeta-susc">
+            <div class="icono-plan fondo-susc-rosa">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3 class="nom-plan">VIP</h3>
+            <p class="desc-plan">Para los verdaderos amantes del sin gluten</p>
+            <div class="precio-susc">79€<span class="mes-susc">/mes</span></div>
+            <ul class="lista-susc">
+                <li><i class="fa-solid fa-check tick-rojo"></i> Cesta mensual valorada en 100€+</li>
+                <li><i class="fa-solid fa-check tick-rojo"></i> 12-15 productos ultra premium</li>
+                <li><i class="fa-solid fa-check tick-rojo"></i> Envío express gratis</li>
+                <li><i class="fa-solid fa-check tick-rojo"></i> Productos exclusivos VIP</li>
+                <li><i class="fa-solid fa-check tick-rojo"></i> Descuento 20% en tienda</li>
+                <li><i class="fa-solid fa-check tick-rojo"></i> Personalización total</li>
+                <li><i class="fa-solid fa-check tick-rojo"></i> Atención prioritaria 24/7</li>
+                <li><i class="fa-solid fa-check tick-rojo"></i> Eventos VIP y degustaciones</li>
+                <li><i class="fa-solid fa-check tick-rojo"></i> Regalos sorpresa trimestrales</li>
+            </ul>
+            <a href="#" class="btn-plan-rojo">Suscribirme ahora &rarr;</a>
+        </div>
 
+    </div>
 
+    <!-- GARANTIAS -->
+    <div class="garantias-susc">
+        <span><i class="fa-solid fa-check"></i> Sin permanencia</span>
+        <span><i class="fa-solid fa-check"></i> Cancela cuando quieras</span>
+        <span><i class="fa-solid fa-check"></i> Primera cesta gratis si no te gusta</span>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
+    <!-- ESTADISTICAS -->
+    <div class="stats-susc">
+        <div class="tarjeta-stat">
+            <div class="icono-stat"><i class="fa-regular fa-heart"></i></div>
+            <div class="num-stat">+500</div>
+            <div class="txt-stat">Suscriptores activos</div>
+        </div>
+        <div class="tarjeta-stat">
+            <div class="icono-stat"><i class="fa-regular fa-star"></i></div>
+            <div class="num-stat">4.9/5</div>
+            <div class="txt-stat">Valoración media</div>
+        </div>
+        <div class="tarjeta-stat">
+            <div class="icono-stat"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <div class="num-stat">98%</div>
+            <div class="txt-stat">Renuevan cada mes</div>
+        </div>
+    </div>
 
     <!-- PIE DE PAGINA -->
     <div class="pie-pagina">
         <div class="fila-pie">
-
             <div class="col-logo">
                 <img src="../IMG/logo.jpeg" alt="Logo CeroGluten">
                 <p>Cuidamos de las personas y del planeta. Cestas sin gluten elaboradas con corazón.</p>
@@ -84,7 +157,6 @@
                     </a>
                 </div>
             </div>
-
             <div class="col-enlaces">
                 <h4>Navegación</h4>
                 <ul>
@@ -95,7 +167,6 @@
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
-
             <div class="col-contacto">
                 <h4>Contacto</h4>
                 <div class="linea-contacto">
@@ -111,7 +182,6 @@
                     España
                 </div>
             </div>
-
             <div class="col-sellos">
                 <h4>Confianza</h4>
                 <div class="sello-pie">
@@ -123,18 +193,16 @@
                     <span>Hecho con Corazón</span>
                 </div>
             </div>
-
         </div>
-
         <div class="copyright">
             <p>&copy; 2024 CeroGluten. Todos los derechos reservados.</p>
         </div>
     </div>
 
-    <!-- BOTON SUBIR -->
     <a href="#" class="btn-subir" aria-label="Volver al inicio">
         <i class="fa-solid fa-chevron-up"></i>
     </a>
 
+    <script src="carrito.js"></script>
 </body>
 </html>
