@@ -1,0 +1,762 @@
+﻿/* =============================================
+   Media Queries para todos los dispositivos
+
+   Sizes:
+   - Móvil pequeño:  hasta 480px
+   - Móvil:          hasta 768px
+   - Tablet:         hasta 1024px
+   - Escritorio:     1025px en adelante
+   ============================================= */
+
+/* =============================================
+   TABLET - hasta 1024px
+   ============================================= */
+
+@media (max-width: 1024px) {
+
+    /* CABECERA */
+    .cabecera {
+        padding: 14px 28px;
+    }
+
+    .nav-container {
+        margin-left: 24px;
+    }
+
+    .menu li {
+        margin-right: 18px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .portada {
+        padding: 48px 40px;
+    }
+
+    .hero-contenido h1 {
+        font-size: 42px;
+    }
+
+    .nosotros {
+        padding: 60px 40px;
+    }
+
+    .img-fondo {
+        min-width: 320px;
+    }
+
+    .ventajas {
+        padding: 60px 40px;
+    }
+
+    .pie-pagina {
+        padding: 48px 40px 32px 40px;
+    }
+
+    .col-logo,
+    .col-enlaces,
+    .col-contacto,
+    .col-sellos {
+        width: 45%;
+        min-width: 160px;
+        margin-bottom: 32px;
+    }
+
+    .col-imagen {
+        width: 48%;
+    }
+
+    .col-info {
+        width: 48%;
+    }
+
+    .planes-susc {
+        flex-wrap: wrap;
+        padding: 40px 24px;
+    }
+
+    .tarjeta-susc {
+        width: 260px;
+        margin: 12px;
+    }
+
+    .hero-nos {
+        padding: 40px 40px;
+        column-gap: 40px;
+    }
+
+    .cuerpo-cont {
+        padding: 40px 40px 56px 40px;
+    }
+    .art-dest {
+        padding: 40px 40px;
+        column-gap: 40px;
+    }
+
+    .rejilla-blog {
+        padding: 40px 40px;
+    }
+
+    .tarjeta-blog {
+        width: 360px;
+    }
+}
+
+
+/* =============================================
+   MOVIL GRANDE / TABLET PEQUEÑA - hasta 768px
+   ============================================= */
+
+@media (max-width: 768px) {
+
+    .cabecera {
+        padding: 12px 20px;
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    .nav-container {
+        display: none;
+        width: 100%;
+        margin-left: 0;
+        order: 3;
+        background-color: #fff;
+        border-top: 1px solid #f0f0f0;
+        padding: 12px 0;
+    }
+
+    .nav-container.abierto {
+        display: block;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin-right: 0;
+        border-bottom: 1px solid #f5f5f5;
+    }
+
+    .menu a {
+        line-height: 1;
+        padding: 14px 16px;
+        font-size: 15px;
+    }
+
+    .botones-cabecera {
+        margin-left: auto;
+    }
+
+    .btn-regalar {
+        display: none;
+    }
+
+    .nav-container {
+        display: block;
+    }
+
+    .portada {
+        flex-direction: column;
+        padding: 40px 20px;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .hero-contenido {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .hero-contenido h1 {
+        font-size: 36px;
+    }
+
+    .lema {
+        font-size: 17px;
+    }
+
+    .botones-accion {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .sellos-seguridad {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sellos-seguridad span {
+        margin: 4px 12px;
+    }
+
+    .hero-imagen {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-imagen img {
+        height: 300px;
+    }
+
+    .tarjeta-certificada {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -16px;
+        min-width: 180px;
+    }
+
+    .ventajas {
+        padding: 48px 20px;
+    }
+
+    .contenedor-ventajas {
+        padding: 0;
+    }
+
+    .caja-ventaja {
+        width: 100%;
+        max-width: 380px;
+        margin: 12px 0;
+    }
+
+    .nosotros {
+        flex-direction: column;
+        padding: 48px 20px;
+        text-align: center;
+    }
+
+    .img-fondo {
+        width: 100%;
+        min-width: unset;
+        margin-bottom: 48px;
+    }
+
+    .img-fondo img {
+        height: 340px;
+    }
+
+    .texto-nosotros {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .opiniones {
+        padding: 48px 20px;
+    }
+
+    .tarjeta-opinion {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .resumen-opiniones {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .txt-resumen {
+        margin-left: 0;
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    .planes {
+        padding: 48px 20px;
+    }
+
+    .rejilla-planes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-plan {
+        width: 100%;
+        max-width: 380px;
+        margin: 10px 0;
+    }
+
+    .motivos {
+        padding: 48px 20px;
+    }
+
+    .caja-motivo {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .barra-datos {
+        flex-direction: column;
+    }
+
+    .dato {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #e5e0d8;
+    }
+
+    .dato:last-child {
+        border-bottom: none;
+    }
+
+    .boletin {
+        padding: 48px 20px;
+    }
+
+    .boletin h2 {
+        font-size: 28px;
+    }
+
+    .ventajas-boletin {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bloque-boletin {
+        width: 45%;
+        min-width: 140px;
+        margin: 6px;
+    }
+
+    .formulario {
+        flex-direction: column;
+        border-radius: 16px;
+        padding: 16px;
+        max-width: 100%;
+    }
+
+    .formulario input[type="email"] {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .btn-enviar {
+        width: 100%;
+    }
+
+    .pie-pagina {
+        padding: 40px 20px 24px 20px;
+    }
+
+    .col-logo,
+    .col-enlaces,
+    .col-contacto,
+    .col-sellos {
+        width: 100%;
+        min-width: unset;
+        margin-right: 0;
+        margin-bottom: 28px;
+    }
+
+    .cabecera-pagina-cestas {
+        padding: 40px 20px 24px 20px;
+    }
+
+    .cabecera-pagina-cestas h1 {
+        font-size: 32px;
+    }
+
+    .barra-herramientas {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 0 16px;
+        margin: 24px auto;
+    }
+
+    .rejilla-catalogo {
+        padding: 0 12px;
+    }
+
+    .tarjeta-catalogo {
+        width: 100%;
+        max-width: 420px;
+        margin: 12px 0;
+    }
+
+    .seccion-producto {
+        flex-direction: column;
+        padding: 20px 20px;
+    }
+
+    .col-imagen {
+        width: 100%;
+        min-width: unset;
+        margin-bottom: 32px;
+    }
+
+    .col-info {
+        width: 100%;
+        min-width: unset;
+    }
+
+    .col-info h1 {
+        font-size: 32px;
+    }
+
+    .precio-detalle {
+        font-size: 28px;
+    }
+
+    .btn-anadir-detalle {
+        width: 100%;
+    }
+
+    .fila-ruta {
+        padding: 20px 20px;
+    }
+
+    .bloque-incluidos {
+        padding: 0 20px;
+        margin: 40px auto;
+    }
+
+    .grid-incluidos {
+        padding: 24px;
+    }
+
+    .item-incluido {
+        width: 100%;
+    }
+
+    .bloque-recomendados {
+        padding: 0 20px 40px 20px;
+        margin: 40px auto;
+    }
+
+    .rejilla-reco {
+        gap: 16px;
+    }
+
+    .rejilla-reco .tarjeta-catalogo {
+        width: 280px;
+    }
+
+    .hero-susc,
+    .hero-cont,
+    .hero-blog {
+        padding: 48px 20px 36px 20px;
+    }
+
+    .titulo-susc {
+        font-size: 36px;
+    }
+
+    .titulo-cont {
+        font-size: 32px;
+    }
+
+    .titulo-blog {
+        font-size: 34px;
+    }
+
+    .planes-susc {
+        flex-direction: column;
+        align-items: center;
+        padding: 32px 20px;
+    }
+
+    .tarjeta-susc {
+        width: 100%;
+        max-width: 400px;
+        margin: 12px 0;
+    }
+
+    .garantias-susc span {
+        display: block;
+        margin: 6px auto;
+        text-align: center;
+    }
+
+    .stats-susc {
+        flex-direction: column;
+        align-items: center;
+        padding: 48px 20px;
+    }
+
+    .tarjeta-stat {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+
+    .hero-nos {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .col-txt-nos {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 32px;
+    }
+
+    .col-img-nos {
+        width: 100%;
+        min-height: 340px;
+    }
+
+    .cita-nos {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20px;
+        width: 80%;
+    }
+
+    .stats-nos {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .stat-nos {
+        margin: 8px 16px;
+    }
+
+    .origen {
+        padding: 56px 20px;
+    }
+
+    .titulo-origen {
+        font-size: 28px;
+    }
+
+    .cta-nos {
+        padding: 56px 20px;
+    }
+
+    .cta-nos h2 {
+        font-size: 28px;
+    }
+
+    .cuerpo-cont {
+        flex-direction: column;
+        padding: 32px 20px 48px 20px;
+    }
+
+    .col-datos {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 28px;
+    }
+
+    .col-form {
+        width: 100%;
+        padding: 28px 24px;
+    }
+
+    .fila-inputs {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .grupo-input.mitad {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .nota-cont {
+        padding: 20px 20px 40px 20px;
+    }
+
+    .art-dest {
+        flex-direction: column;
+        padding: 32px 20px;
+        column-gap: 0;
+        row-gap: 28px;
+    }
+
+    .img-dest {
+        width: 100%;
+        min-height: 260px;
+    }
+
+    .info-dest {
+        width: 100%;
+    }
+
+    .rejilla-blog {
+        padding: 32px 20px;
+        column-gap: 0;
+    }
+
+    .tarjeta-blog {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .seccion-carrito {
+        padding: 32px 20px 60px 20px;
+    }
+
+    .cabecera-carrito h1 {
+        font-size: 28px;
+    }
+
+    .fila-carrito {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .info-carrito {
+        width: auto;
+        flex: 1;
+    }
+
+    .subtotal-carrito {
+        margin-left: 0;
+    }
+
+    .acciones-carrito {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn-vaciar,
+    .btn-tramitar {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/* =============================================
+   MOVIL PEQUEÑO - hasta 480px
+   ============================================= */
+
+@media (max-width: 480px) {
+
+    .cabecera {
+        padding: 10px 14px;
+    }
+
+    .logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .btn-icono {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+        margin-left: 4px;
+    }
+
+    .hero-contenido h1 {
+        font-size: 28px;
+    }
+
+    .lema {
+        font-size: 15px;
+    }
+
+    .descripcion {
+        font-size: 14px;
+    }
+
+    .btn-oro,
+    .btn-borde-oro {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .hero-imagen img {
+        height: 240px;
+    }
+
+    .titulos-seccion h2 {
+        font-size: 28px;
+    }
+
+    .titulo-susc {
+        font-size: 28px;
+    }
+
+    .titulo-cont {
+        font-size: 26px;
+    }
+
+    .titulo-blog {
+        font-size: 26px;
+    }
+
+    .titulo-nos {
+        font-size: 30px;
+    }
+
+    .titulo-origen,
+    .cta-nos h2 {
+        font-size: 24px;
+    }
+
+    .cabecera-pagina-cestas h1 {
+        font-size: 26px;
+    }
+
+    .tarjeta-catalogo {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .caja-img-catalogo {
+        height: 260px;
+    }
+
+    .col-info h1 {
+        font-size: 26px;
+    }
+
+    .precio-detalle {
+        font-size: 24px;
+    }
+
+    .grid-iconos-detalle {
+        flex-direction: column;
+    }
+
+    .caja-icono-detalle {
+        width: 100%;
+    }
+
+    .fila-compra {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .selector-cantidad {
+        justify-content: center;
+    }
+
+    .titulo-art {
+        font-size: 22px;
+    }
+    .col-logo,
+    .col-enlaces,
+    .col-contacto,
+    .col-sellos {
+        min-width: unset;
+    }
+
+    .btn-subir {
+        bottom: 20px;
+        right: 16px;
+        width: 42px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .img-carrito {
+        width: 64px;
+        height: 64px;
+    }
+
+    .nombre-carrito {
+        font-size: 14px;
+    }
+}

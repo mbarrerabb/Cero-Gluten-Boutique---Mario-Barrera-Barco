@@ -1200,7 +1200,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 1140px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -1820,7 +1820,7 @@ img {
 }
 
 .texto-origen {
-    color: #555;
+    color: #424242;
     max-width: 700px;
     margin: 0 auto 24px auto;
     line-height: 1.8;

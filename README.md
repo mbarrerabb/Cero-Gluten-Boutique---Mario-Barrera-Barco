@@ -79,3 +79,12 @@ Así que con 5 páginas .html que me qudan por crear o terminar todavía hice es
 3️⃣ - Commit 3: "¿Queda mucho?" Páginas " de relleno " como quien dice , la suscripción , el blog , nosotros y contacto. Ese "fondo" que le faltaba a la web para estar completa porque pocas tiendas online venden publicando solo el catálogo de productos.
 
 La idea principal del proyecto estaría finalizada solo faltaría toda la documentación y inentar integrar algunas de las posibles mejoras que se me ocurran.
+
+4️⃣ - Commit 4: "Es oficial"
+Web finalizada , el carrito funciona , la página principal es interactiva , los links funcionan ... Se puede comprar productos en línea con una página web responsiva y COMPLETAMENTE FUNCIONAL.
+
+Dominio contratado , web online en marcha , quería llegar lejos ... ¡ Y SE ME HA IDO DE LAS MANOS!
+
+No quiero engañar a nadie , este commit esta cargado de IA ,todo lo escrito en script o js lo ha creado especificamente con CLAUDE pero tal y como se pidió entendiendo en todo momento lo que escribía , lo que quería y como quería que funcionara y quedara.
+
+El carrito de compra esta simulado con js cerrando por completo su funcionalidad pero con una interfaz de usuario muy lograda.

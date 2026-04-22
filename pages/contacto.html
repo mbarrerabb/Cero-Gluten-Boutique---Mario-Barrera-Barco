@@ -8,6 +8,7 @@
     <link rel="website icon" type="png" href="../IMG/logo.jpeg">
     <link rel="stylesheet" href="../fuentes/fontawesome-free-7.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
 
@@ -73,7 +74,7 @@
                 <div class="circulo-dato"><i class="fa-solid fa-phone"></i></div>
                 <div class="info-dato">
                     <h4>Teléfono</h4>
-                    <span>+34 606 685 546</span>
+                    <span>+34 696 44 92 66</span>
                 </div>
             </div>
 
@@ -112,22 +113,22 @@
             <div class="fila-inputs">
                 <div class="grupo-input mitad">
                     <label>Nombre *</label>
-                    <input type="text" placeholder="Tu nombre">
+                    <input type="text" id="nombre" placeholder="Tu nombre">
                 </div>
                 <div class="grupo-input mitad">
                     <label>Email *</label>
-                    <input type="email" placeholder="tu@email.com">
+                    <input type="email" id="email" placeholder="tu@email.com">
                 </div>
             </div>
-
+            
             <div class="grupo-input">
                 <label>Asunto</label>
-                <input type="text" placeholder="¿Sobre qué quieres hablar?">
+                <input type="text" id="asunto" placeholder="¿Sobre qué quieres hablar?">
             </div>
 
             <div class="grupo-input">
                 <label>Mensaje *</label>
-                <textarea placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+                <textarea id="mensaje" placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
             </div>
 
             <button class="btn-enviar-cont">
@@ -135,6 +136,20 @@
             </button>
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script>
+            emailjs.init("0cjf5XyzD-1jq_Lnn");
+
+            document.querySelector(".btn-enviar-cont").addEventListener("click", () => {
+                emailjs.send("service_awqv137", "template_b29f688", {
+                    nombre:  document.getElementById("nombre").value,
+                    email:   document.getElementById("email").value,
+                    asunto:  document.getElementById("asunto").value,
+                    mensaje: document.getElementById("mensaje").value,
+                }).then(() => alert("✅ Mensaje enviado correctamente , nos pondremos en contacto contigo lo antes posible"))
+                .catch(() => alert("❌ Error al enviar, inténtalo de nuevo introduciendo los caracteres correctamente"));
+            });
+        </script>
     </div>
 
     <!-- NOTA FINAL -->
@@ -175,7 +190,7 @@
                 </div>
                 <div class="linea-contacto">
                     <i class="fa-solid fa-phone"></i>
-                    +34 606 685 546
+                    +34 696 44 92 66
                 </div>
                 <div class="linea-contacto">
                     <i class="fa-solid fa-location-dot"></i>
@@ -195,7 +210,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2024 CeroGluten. Todos los derechos reservados.</p>
+            <p>&copy; 2026 CeroGluten. Todos los derechos reservados.</p>
         </div>
     </div>
 
